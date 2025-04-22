@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meet Your Cat!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fceabb, #f8b500);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .footer {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>{{ cat_name }}</h1>
+        <h2>Origin: {{ cat_origin }}</h2>
+        <img src="{{ cat_image_url }}" alt="Cute Cat">
+        <div class="footer">Powered by Free API</div>
+    </div>
+</body>
+  </html>
