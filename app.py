@@ -18,4 +18,4 @@ def cat_info():
         return "Failed to fetch cat data.", 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
